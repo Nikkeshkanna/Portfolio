@@ -13,7 +13,7 @@ This is my personal portfolio website built using HTML, CSS, and JavaScript.
 - JavaScript
 
 ## Live Demo
-(Enable GitHub Pages to view live site)
+🔗 https://nikkeshkanna.github.io/Portfolio/
 
 ## Author
 Nikkeshkanna C V
