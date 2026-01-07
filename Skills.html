@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Main card same as Home/About */
+    .contact-card {
+      background: #0d1b2a;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      max-width: 700px;
+      margin: auto;
+      color: #fff;
+    }
+
+    .skills-container h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 25px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .skills-section {
+      margin-bottom: 30px;
+    }
+
+    .skills-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #ffcc70;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+      font-weight: 500;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.08);
+      background: rgba(0, 195, 255, 0.2);
+      box-shadow: 0 6px 18px rgba(0,195,255,0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-user"></i> About</a>
+      <a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a>
+      <a href="skills.html" class="active"><i class="fas fa-code"></i> Skills</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="skills-container">
+        <h1>Skills</h1>
+
+        <div class="skills-section">
+          <h2>Programming</h2>
+          <div class="skills-grid">
+            <div class="skill-card">Java</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">C++</div>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <h2>Web Development</h2>
+          <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Spring Boot</div>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <h2>Tools</h2>
+          <div class="skills-grid">
+            <div class="skill-card">Git</div>
+            <div class="skill-card">GitHub</div>
+            <div class="skill-card">VS Code</div>
+            <div class="skill-card">IntelliJ</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

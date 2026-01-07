@@ -1,0 +1,133 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e5672, #983e2a);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80vh;
+  background: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 220px;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.sidebar a:hover {
+  background: rgba(0, 170, 255, 0.3);
+  transform: scale(1.05);
+  color: #00c3ff;
+  box-shadow: 0 0 15px rgba(0, 195, 255, 0.6);
+}
+
+/* Active (clicked) link */
+.sidebar a.active {
+  background: #00c3ff;
+  color: white;
+  font-weight: bold;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 195, 255, 0.9);
+}
+
+/* ===== CONTENT ===== */
+.content {
+  flex: 1;
+  padding: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin: 15px 0 8px 0;
+  text-align: left;
+}
+
+.content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  border: 3px solid #00c3ff;
+}
+
+/* ===== SKILLS LIST ===== */
+.skill-list {
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.skills-container {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      max-width: 900px;
+      margin: auto;
+}
+.skill-list li {
+  text-align: left;
+  font-size: 1.1rem;
+  margin: 6px 0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.skill-list li:hover {
+  transform: translateX(10px);
+  color: #00c3ff;
+}
+
+/* ===== ANIMATIONS ===== */
+h1 span {
+  color: #00c3ff;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
